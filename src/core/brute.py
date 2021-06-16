@@ -25,7 +25,7 @@ def connect() -> str:
             (bruteforce(path)) if verify() else print(f"[red][ERR] Connection problems with {url} | {status_code}")
 
         except Exception as e:
-            return print(f"[red][!] - An error occurred: {e} [/]")
+            return print(f"[red][!] - An error happened: {e} [/]")
 
 
 def bruteforce(path) -> str:
@@ -53,10 +53,12 @@ def bruteforce(path) -> str:
         status_code = response.status_code
 
         if(status_code == 200):
-            print(f"[green][INF] {u+p} | {path} \n")
+            print(f"[green][INF] {u+p} | {path} | {auth_string} \n")
 
             with open("src/core/result/out.txt", "a+") as file:
                 file.write(f"{path} | {u+p} | {auth_string}")
 
         else:
             pass
+
+

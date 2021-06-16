@@ -8,5 +8,4 @@ def main():
     get_banner()
     connect()
 
-
 main()
