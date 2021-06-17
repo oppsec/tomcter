@@ -29,6 +29,15 @@
 4. Run Tomcter with python3 main.py
 ```
 
+### 🐳 Docker
+If you want to use Tomcter in a Docker container, follow this commands:
+
+```
+1. Clone the repository - git clone https://github.com/oppsec/tomcter.git
+2. Build the image - sudo docker build -t tomcter:latest .
+3. Run container - sudo docker run tomcter:latest
+```
+
 <br><br>
 
 ### ⚙️ Pre-requisites
