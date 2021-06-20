@@ -23,3 +23,13 @@ QCC:
 role:
 tomcat:
 admin:
+root:
+tomcat:
+root:
+both:
+admin:
+ADMIN:
+admin:
+demo:
+server_admin:
+admin:
