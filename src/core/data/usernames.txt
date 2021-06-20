@@ -14,3 +14,12 @@ passw0rd:
 123:
 tomcat:
 admin:
+ovwebusr:
+j2deployer:
+cxsdk:
+ADMIN:
+xampp:
+QCC:
+role:
+tomcat:
+admin:
