@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
-from src.design.ui import *
-from src.core.brute import connect
+from src.design.ui import get_banner, clear
+from src.core.main import connect
 
-def main():
+def main() -> None:
     clear()
     get_banner()
     connect()
 
-main()
+
+if __name__ == "__main__":
+    main()
