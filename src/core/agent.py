@@ -1,7 +1,9 @@
 from random import randint
 
-def return_user_agent(file: str = "src/core/data/user-agents.txt") -> str:
-    "Returns a random User-Agent"
+def get_user_agent() -> str:
+    "Returns a random User-Agent from user-agents file"
+
+    file = "src/core/data/user-agents.txt"
 
     with open(file) as agents_file:
 
