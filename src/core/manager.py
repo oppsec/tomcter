@@ -1,4 +1,4 @@
-from src.core.agent import return_user_agent
+from src.core.agent import get_user_agent
 
 def get_file_data(path) -> None:
     with open(path) as file:
@@ -29,7 +29,7 @@ def get_passwords() -> list:
     return raw
 
 
-headers = {'User-Agent': return_user_agent()}
+headers = {'User-Agent': get_user_agent()}
 
 props = {
     'verify': False,
