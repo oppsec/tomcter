@@ -10,11 +10,13 @@
     <img src="https://img.shields.io/github/license/oppsec/tomcter?color=orange&logo=github&logoColor=orange&style=for-the-badge">
     <img src="https://img.shields.io/github/issues/oppsec/tomcter?color=orange&logo=github&logoColor=orange&style=for-the-badge">
     <img src="https://img.shields.io/github/stars/oppsec/tomcter?color=orange&label=STARS&logo=github&logoColor=orange&style=for-the-badge">
+    <img src="https://img.shields.io/github/forks/oppsec/tomcter?color=orange&logo=github&logoColor=orange&style=for-the-badge">
+    <img src="https://img.shields.io/github/languages/code-size/oppsec/tomcter?color=orange&logo=github&logoColor=orange&style=for-the-badge">
 </p>
 
 <br>
 
-<p> <b>Tomcter</b> is a python tool developed to bruteforce Apache Tomcat manager username and password. </p>
+<p> 😹 <b>Tomcter</b> is a python tool developed to bruteforce Apache Tomcat manager login with Apache Tomcat default credentials. </p>
 
 <br>
 
