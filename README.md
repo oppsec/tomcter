@@ -25,10 +25,10 @@
 <p> A quick guide of how to install and use Tomcter. </p>
 
 ```
-1. Clone the repository with git clone https://github.com/oppsec/tomcter.git
-2. Install the libraries with pip3 install -r requirements.txt
-3. Insert the targets URL on src/core/data/urls.txt file (ex: https://www.google.com)
-4. Run Tomcter with python3 main.py
+1. Clone the repository with: git clone https://github.com/oppsec/tomcter.git
+2. Install the libraries with: pip3 install -r requirements.txt
+3. Insert your targets urls on src/core/data/urls.txt file (ex: https://www.google.com)
+4. Run Tomcter with: python3 main.py
 ```
 
 ### 🐳 Docker
@@ -57,7 +57,7 @@ If you want to use Tomcter in a Docker container, follow this commands:
 
 ### 📚 To-Do
 - [ ] Improve Tomcat detection
-- [ ] Improve code
+- [x] Improve code
 
 <br><br>
 
