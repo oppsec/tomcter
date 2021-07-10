@@ -43,7 +43,7 @@ def bruteforce(path) -> str:
         auth_string = auth_string.replace(chars, "")
         auth_string = auth_string.replace("'", "")
 
-        auth_header = { 'Authorization': auth_string, 'User-Agent': get_user_agent() }
+        auth_header = { 'Authorization': auth_string, 'User-Agent': user_agent() }
 
         response = get(path, verify=False, headers=auth_header)
         status_code = response.status_code
