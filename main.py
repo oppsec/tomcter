@@ -3,11 +3,8 @@
 from src.design.ui import get_banner, clear
 from src.core.main import connect
 
-def main() -> None:
+
+if __name__ == "__main__":
     clear()
     get_banner()
     connect()
-
-
-if __name__ == "__main__":
-    main()
