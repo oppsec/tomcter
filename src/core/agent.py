@@ -1,9 +1,10 @@
 from random import randint
 
 def user_agent() -> str:
-    "Returns a random User-Agent"
+    """Returns a random User-Agent
+    """
 
-    file = "src/core/data/user-agents.txt"
+    file: str = "src/core/data/user-agents.txt"
 
     with open(file) as agents_file:
         user_agents = agents_file.readlines()
