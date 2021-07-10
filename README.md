@@ -54,8 +54,8 @@ If you want to use Tomcter in a Docker container, follow this commands:
 <br><br>
 
 ### 📚 To-Do
-- [] Improve Tomcat detection
-- [] Improve code
+- [ ] Improve Tomcat detection
+- [ ] Improve code
 
 <br><br>
 
