@@ -5,7 +5,7 @@
  / / / /_/ / / / / / / /__/ /_/  __/ /    
 /_/  \____/_/ /_/ /_/\___/\__/\___/_/     
                                           
-Python Tomcat Login Bruteforce
+Python Apache Tomcat Login Bruteforce
 build: 0.3a
 by @opps3c
 
