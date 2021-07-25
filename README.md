@@ -1,8 +1,8 @@
 # 😹 Tomcter
-> Python Tomcat Login Bruteforce
+> Python Apache Tomcat Login Bruteforce
 
 <div align="center">
-    <img src="./assets/out.png">
+    <img src="./assets/preview.png">
 </div>
 
 <p align="center">
@@ -26,8 +26,8 @@
 ```
 1. Clone the repository with: git clone https://github.com/oppsec/tomcter.git
 2. Install the libraries with: pip3 install -r requirements.txt
-3. Insert your targets urls on src/core/data/urls.txt file (ex: https://www.google.com)
-4. Run Tomcter with: python3 main.py
+3. Create a text file and place your targets in it
+4. Run Tomcter with: python3 main.py -l filename.txt
 ```
 
 <br>
@@ -53,6 +53,7 @@ If you want to use Tomcter in a Docker container, follow this commands:
 - Fast bruteforce
 - Low RAM and CPU usage
 - Open-Source
+- Python ❤️
 
 <br><br>
 
