@@ -33,7 +33,10 @@ def connect(args) -> str:
                 (bruteforce(path)) if detect() else print(f"[red][*] Connection problems with {target} | {status_code} [/]")
 
             except Exception as e:
-                return print(f"[red][!] - An error happened: {e} [/]")
+                return print(f"[red][!] An error happened: {e} [/]")
+
+            except ConnectionRefusedError:
+                pass
 
 
 def bruteforce(path) -> str:
