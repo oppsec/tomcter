@@ -33,3 +33,6 @@ admin:
 demo:
 server_admin:
 admin:
+both:
+role1:
+tomcat:
