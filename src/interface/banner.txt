@@ -6,5 +6,5 @@
     \/_/   \/_____/   \/_/  \/_/   \/_____/     \/_/   \/_____/   \/_/ /_/ 
                                                                            
                                           
-Python Apache Tomcat Login Bruteforce
+Forcing Apache Tomcat to give me the credentials!
 build: 0.3b
