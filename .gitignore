@@ -1,5 +1,5 @@
 # Tomcter
-src/core/result/out.txt
+target.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
