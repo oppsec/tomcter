@@ -2,7 +2,7 @@
 > Forcing Apache Tomcat to give me the credentials!
 
 <div align="center">
-    <img src="./assets/out.png">
+    <img src="./assets/banner.png">
 </div>
 
 <p align="center">
