@@ -1,16 +1,16 @@
 # 😹 Tomcter
-> Python Apache Tomcat Login Bruteforce
+> Forcing Apache Tomcat to give me the credentials!
 
 <div align="center">
-    <img src="./assets/preview.png">
+    <img src="./assets/out.png">
 </div>
 
 <p align="center">
-    <img src="https://img.shields.io/github/license/oppsec/tomcter?color=orange&logo=github&logoColor=orange&style=for-the-badge">
-    <img src="https://img.shields.io/github/issues/oppsec/tomcter?color=orange&logo=github&logoColor=orange&style=for-the-badge">
-    <img src="https://img.shields.io/github/stars/oppsec/tomcter?color=orange&label=STARS&logo=github&logoColor=orange&style=for-the-badge">
-    <img src="https://img.shields.io/github/forks/oppsec/tomcter?color=orange&logo=github&logoColor=orange&style=for-the-badge">
-    <img src="https://img.shields.io/github/languages/code-size/oppsec/tomcter?color=orange&logo=github&logoColor=orange&style=for-the-badge">
+    <img src="https://img.shields.io/github/license/knightm4re/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/issues/knightm4re/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/stars/knightm4re/tomcter?color=yellow&label=STARS&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/forks/knightm4re/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/languages/code-size/knightm4re/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
 </p>
 
 <br>
@@ -24,7 +24,7 @@
 <p> A quick guide of how to install and use Tomcter. </p>
 
 ```
-1. Clone the repository with: git clone https://github.com/oppsec/tomcter.git
+1. Clone the repository with: git clone https://github.com/knightm4re/tomcter.git
 2. Install the libraries with: pip3 install -r requirements.txt
 3. Create a text file and place your targets in it
 4. Run Tomcter with: python3 main.py -l filename.txt
@@ -36,7 +36,7 @@
 If you want to use Tomcter in a Docker container, follow this commands:
 
 ```
-1. Clone the repository - git clone https://github.com/oppsec/tomcter.git
+1. Clone the repository - git clone https://github.com/knightm4re/tomcter.git
 2. Build the image - sudo docker build -t tomcter:latest .
 3. Run container - sudo docker run tomcter:latest
 ```
@@ -54,12 +54,6 @@ If you want to use Tomcter in a Docker container, follow this commands:
 - Low RAM and CPU usage
 - Open-Source
 - Python ❤️
-
-<br><br>
-
-### 📚 To-Do
-- [ ] Improve Tomcat detection
-- [x] Improve code
 
 <br><br>
 
