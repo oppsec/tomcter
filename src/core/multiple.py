@@ -12,6 +12,7 @@ def connect(args) -> str:
     """ Try to connect to the target """
 
     targets_file = args.l
+    
     with open(targets_file, "r+") as file:
 
         content = file.readlines()

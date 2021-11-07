@@ -7,14 +7,6 @@ def get_file_data(path) -> str:
         return file.read()
 
 
-def get_urls() -> list:
-    " Get all urls inside urls.txt file "
-
-    raw = get_file_data('src/core/data/urls.txt')
-    raw = raw.split('\n')
-    return raw
-
-
 def get_usernames() -> list:
     " Get all usernames inside usernames.txt file "
 
@@ -48,7 +40,7 @@ headers = {'User-Agent': user_agent()}
 
 props = {
     "verify": False,
-    "timeout": 20,
+    "timeout": 25,
     "allow_redirects": True,
     "headers": headers
 }
