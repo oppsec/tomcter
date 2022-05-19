@@ -9,7 +9,7 @@ from src.core.manager import *
 
 
 def single_connect(args) -> str:
-    """ Try to connect to the target """
+    """ Check if target is alive and try to connect with Apache Tomcat login page """
 
     target = args.u
     path: str = f"{target}/manager/html"
@@ -30,9 +30,9 @@ def single_connect(args) -> str:
 
 
 def bruteforce(path) -> str:
-    " Bruteforce the Apache Tomcat manager login generating a cookie "
+    """ Bruteforce Apache Tomcat login with default credentials """
 
-    print(f"[green][+] Tomcat detected in {path} starting bruteforce... [/]")
+    print(f"[yellow][!] Starting bruteforce on {path} [/]")
 
     for u, p in zip(get_usernames(), get_passwords()):
 
@@ -51,9 +51,9 @@ def bruteforce(path) -> str:
         status_code: str = response.status_code
 
         if (status_code == 200):
-            print(f"[cyan][!] Login: {u+p} | URL: {path} | Cookie: {auth_string}\n [/]")
+            print(f"[green][+] Login: {u+p} | URL: {path} | Cookie: {auth_string}\n [/]")
 
             with open("src/core/result/out.txt", "a+") as file:
                 file.write(f"{path} | {u+p} | {auth_string}")
 
-    print(f"[green][+] Bruteforce in {path} is done.\n [/]")
+    print(f"[yellow][!] Bruteforce in {path} is done.\n [/]")
