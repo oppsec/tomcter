@@ -1,5 +1,5 @@
 # 😹 Tomcter
-> Forcing Apache Tomcat to give me the credentials!
+> Stealing credentials from a yellow cat
 
 <div align="center">
     <img src="./assets/banner.png">
