@@ -15,7 +15,7 @@
 
 <br>
 
-<p> 😹 <b>Tomcter</b> is a python tool developed to bruteforce Apache Tomcat manager login with Apache Tomcat default credentials. </p>
+<p> 😹 <b>Tomcter</b> is a python tool developed to bruteforce Apache Tomcat manager login with default credentials. </p>
 
 <br>
 
@@ -24,7 +24,7 @@
 <p> A quick guide of how to install and use Tomcter. </p>
 
 ```
-1. Clone the repository with: git clone https://github.com/knightm4re/tomcter.git
+1. Clone the repository with: git clone https://github.com/oppsec/tomcter.git
 2. Install the libraries with: pip3 install -r requirements.txt
 3. Create a text file and place your targets in it
 4. Run Tomcter with: python3 main.py -l filename.txt
@@ -36,7 +36,7 @@
 If you want to use Tomcter in a Docker container, follow this commands:
 
 ```
-1. Clone the repository - git clone https://github.com/knightm4re/tomcter.git
+1. Clone the repository - git clone https://github.com/oppsec/tomcter.git
 2. Build the image - sudo docker build -t tomcter:latest .
 3. Run container - sudo docker run tomcter:latest
 ```
@@ -50,6 +50,7 @@ If you want to use Tomcter in a Docker container, follow this commands:
 <br><br>
 
 ### ✨ Features
+- Works with ProxyChains
 - Fast bruteforce
 - Low RAM and CPU usage
 - Open-Source
