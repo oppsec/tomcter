@@ -6,11 +6,11 @@
 </div>
 
 <p align="center">
-    <img src="https://img.shields.io/github/license/knightm4re/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
-    <img src="https://img.shields.io/github/issues/knightm4re/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
-    <img src="https://img.shields.io/github/stars/knightm4re/tomcter?color=yellow&label=STARS&logo=github&logoColor=yellow&style=for-the-badge">
-    <img src="https://img.shields.io/github/forks/knightm4re/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
-    <img src="https://img.shields.io/github/languages/code-size/knightm4re/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/license/oppsec/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/issues/oppsec/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/stars/oppsec/tomcter?color=yellow&label=STARS&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/forks/oppsec/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
+    <img src="https://img.shields.io/github/languages/code-size/oppsec/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
 </p>
 
 <br>
