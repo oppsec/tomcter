@@ -58,12 +58,6 @@ If you want to use Tomcter in a Docker container, follow this commands:
 
 <br><br>
 
-### 🌐 Resources
-[Python Repo](https://pythonrepo.com/repo/oppsec-tomcter-python-cryptography) <br>
-[Reconshell](https://reconshell.com/tomcter-bruteforce-apache-tomcat-manager-login/)
-
-<br><br>
-
 
 ### 🔨 Contributing
 
