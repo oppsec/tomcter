@@ -13,6 +13,8 @@
     <img src="https://img.shields.io/github/languages/code-size/oppsec/tomcter?color=yellow&logo=github&logoColor=yellow&style=for-the-badge">
 </p>
 
+<br>
+
 ___
 
 <br>
@@ -53,7 +55,7 @@ If you want to use Tomcter in a Docker container, follow this commands:
 
 ### ✨ Features
 - Works with ProxyChains
-- Fast bruteforce
+- Fast Brute-Force
 - Low RAM and CPU usage
 - Open-Source
 - Python ❤️
