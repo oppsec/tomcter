@@ -1,11 +1,25 @@
 from rich import print
+from random import choice
 
-def banner() -> str:
+def get_random_color() -> None:
+    ''' Returns a random color from a predefined list '''
+    
+    color_list: list = [
+        "cyan", "yellow", "red", "blue", "white", "magenta", "green",
+        "italic cyan", "italic yellow", "italic red", "italic blue", "italic white", "italic magenta", "italic green",
+        "bold cyan", "bold yellow", "bold red", "bold blue", "bold white", "bold magenta", "bold green",
+    ]
+    
+    return choice(color_list)
+
+def get_banner() -> None:
     """ Return the content from banner.txt as application banner """
 
-    file: str = "src/interface/banner.txt"
+    ascii = """
+ _._     _,-'""`-._
+(,-.`._,'(       |\`-/|     Tomcter 0.7
+    `-.-' \ )-`( , o o)     Stealing credentials from the yellow cat
+          `-    \`_`"'-
 
-    with open(file) as banner_file:
-        content = banner_file.read()
-
-        print(f"[yellow][b]{content}[/][/]")
+"""
+    print(f"[{get_random_color()}]{ascii}[/]")
