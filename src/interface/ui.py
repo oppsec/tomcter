@@ -1,4 +1,5 @@
-from rich import print
+from rich.console import Console
+console = Console()
 from random import choice
 
 def get_random_color() -> None:
@@ -17,9 +18,9 @@ def get_banner() -> None:
 
     ascii = """
  _._     _,-'""`-._
-(,-.`._,'(       |\`-/|     Tomcter 0.7
+(,-.`._,'(       |\`-/|     Tomcter 0.8
     `-.-' \ )-`( , o o)     Stealing credentials from the yellow cat
           `-    \`_`"'-
 
 """
-    print(f"[{get_random_color()}]{ascii}[/]")
+    console.print(f"[{get_random_color()}]{ascii}[/]")
