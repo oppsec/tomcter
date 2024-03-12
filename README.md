@@ -2,7 +2,7 @@
 > Stealing credentials from a yellow cat
 
 <div align="center">
-    <img src="./assets/preview.png">
+    <img src="https://i.imgur.com/ePw5RQ5.png">
 </div>
 
 <br>
