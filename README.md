@@ -25,25 +25,25 @@ ___
 
 ## ⚡ Installing / Getting started
 
-<p> A quick guide of how to install and use Tomcter. </p>
+A quick guide of how to install and use Tomcter.
+1. Clone the repository with `git clone https://github.com/oppsec/tomcter.git`
+2. Install required libraries with `pip install -r requirements.txt`
 
-```
-1. Clone the repository with: git clone https://github.com/oppsec/tomcter.git
-2. Install the libraries with: pip3 install -r requirements.txt
-3. Create a text file and place your targets in it
-4. Run Tomcter with: python3 main.py -l filename.txt
-```
+### Single Target
+`python3 main.py -u http://host`
+<br>
+
+### Multiple Targets
+`python3 main.py -l file.txt`
 
 <br>
 
 ### 🐳 Docker
 If you want to use Tomcter in a Docker container, follow this commands:
 
-```
-1. Clone the repository - git clone https://github.com/oppsec/tomcter.git
-2. Build the image - sudo docker build -t tomcter:latest .
-3. Run container - sudo docker run tomcter:latest
-```
+1. Clone the repository with `git clone https://github.com/oppsec/tomcter.git`
+2. Build the image with `sudo docker build -t tomcter:latest .`
+3. Run the container with `sudo docker run tomcter:latest`
 
 <br><br>
 
@@ -67,14 +67,12 @@ If you want to use Tomcter in a Docker container, follow this commands:
 
 A quick guide of how to contribute with the project.
 
-```
 1. Create a fork from Tomcter repository
-2. Clone the repository with git clone https://github.com/your/tomcter.git
-3. Type cd tomcter/
+2. Clone the repository with `git clone https://github.com/your/tomcter.git`
+3. Type `cd tomcter/`
 4. Create a branch and make your changes
 5. Commit and make a git push
 6. Open a pull request
-```
 
 <br><br>
 
