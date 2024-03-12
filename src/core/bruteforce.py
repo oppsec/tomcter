@@ -64,4 +64,4 @@ def bruteforce(url) -> str:
         if (status_code == 200):
             console.print(f"\n[green][+][/] Credentials found: {user} - {password}\n")
 
-    console.print(f"\n[yellow][*][/] Bruteforce in {url} is done\n", highlight=False)
+    console.print(f"\n[green][+][/] Bruteforce in {url} is done\n", highlight=False)

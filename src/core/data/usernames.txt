@@ -37,3 +37,4 @@ both
 role1
 tomcat
 admin
+admin
